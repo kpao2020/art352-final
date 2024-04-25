@@ -1,0 +1,37 @@
+const c1 = document.getElementById('about');
+const c2 = document.getElementById('c2');
+const c3 = document.getElementById('c3');
+const b1 = document.getElementById('btn1');
+const b2 = document.getElementById('btn2');
+const b3 = document.getElementById('btn3');
+
+const bioOpenBtn = document.getElementById('bio-open-btn');
+const bioCloseBtn = document.getElementById('bio-close-btn');
+const bioText = document.getElementById('bio-text');
+
+b1.addEventListener("click", () => {
+    c1.classList.toggle("d-none");
+    c2.classList.toggle("d-none");
+});
+
+b2.addEventListener("click", () => {
+    c2.classList.toggle("d-none");
+    c3.classList.toggle("d-none");
+});
+
+b3.addEventListener("click", () => {
+    c3.classList.toggle("d-none");
+    c1.classList.toggle("d-none");
+});
+
+bioOpenBtn.addEventListener("click", () => {
+    bioText.classList.toggle("d-none");
+    bioOpenBtn.classList.toggle("d-none");
+    bioCloseBtn.classList.toggle("d-none");
+});
+
+bioCloseBtn.addEventListener("click", () => {
+    bioText.classList.toggle("d-none");
+    bioOpenBtn.classList.toggle("d-none");
+    bioCloseBtn.classList.toggle("d-none");
+});
