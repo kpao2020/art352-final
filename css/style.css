@@ -54,7 +54,7 @@ button {
   bottom: 20px;  
   padding: 20px;
   margin-right: 50px;    
-  /* margin-left: 80vw; */
+
 	/* 100vh = 1 screen vertical height */
   margin-top: calc(100vh + var(--offset));
 }
@@ -76,74 +76,10 @@ button {
 .anchor{
   scroll-margin-top: 86px;
 }
-/* .off-screen-menu{
-  background-color: #006CB7;
-  height: 100vh;
-  width: 100%;
-  max-width: 400px;
-  position: fixed;
-  top: 0;
-  right: -400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 3rem;
-  transition: 0.5s ease;
-}
 
-.off-screen-menu.active{
-  right: 0;
-}
-
-.ham-menu{
-  height: 50px;
-  width: 40px;
-  margin-left: auto;
-  position: relative;
-}
-
-.ham-menu span{
-  height: 5px;
-  width: 100%;
-  background-color: white;
-  border-radius: 25px;
+.image2{
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 25%;
+  width: 25%;
+  top: 210%;
 }
-
-.ham-menu span:nth-child(1){
-  top: 25%;
-}
-.ham-menu span:nth-child(3){
-  top: 75%;
-}
-
-.ham-menu.active span{
-  background-color: white;
-}
-
-.ham-menu.active span:nth-child(1){
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.ham-menu.active span:nth-child(2){
-  opacity: 0;
-}
-
-.ham-menu.active span:nth-child(3){
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-@media screen and (maxWidth: 768px) {
-    
-}
-
-@media screen and (maxWidth: 480px) {
-    
-} */

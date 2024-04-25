@@ -1,0 +1,30 @@
+.b-div {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+
+    border: 10px solid #006CB7;
+}
+
+.birdie {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    border: 1px solid #fff;
+    animation: fly 3s both infinite linear ease;
+}
+
+/* Animation */
+@keyframes fly {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(1000px);
+    }
+}
