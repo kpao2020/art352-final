@@ -72,8 +72,8 @@
               <li class="nav-item align-self-center">
                 <a class="nav-link btn-cRed px-3" href="index.html">Home</a>
               </li>
-              <li>
-                <ul>
+              <li class="nav-item">
+                <ul class="navbar-nav container align-items-center">
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#bc">Badminton Carousel</a>
                   </li>
@@ -93,8 +93,8 @@
               <li class="nav-item align-self-center">
                 <a class="nav-link btn-cRed px-3 active" aria-current="page" href="#">Learn</a>
               </li>
-              <li>
-                <ul>
+              <li class="nav-item">
+                <ul class="navbar-nav container align-items-center">
                   <li class="nav-item">
                     <a class="nav-link" href="#learn">Learn Badminton</a>
                   </li>
@@ -111,8 +111,8 @@
               <li class="nav-item align-self-center">
                 <a class="nav-link btn-cRed px-3" href="about.html">About</a>
               </li>
-              <li>
-                <ul>
+              <li class="nav-item">
+                <ul class="navbar-nav container align-items-center">
                   <li class="nav-item">
                     <a class="nav-link" href="about.html#bio">Bio</a>
                   </li>
@@ -131,52 +131,61 @@
     <!--  //////////// LEARN BADMINTON ///////////-->
     <div id="learn" class="d-flex flex-column bg-blue p-3 rounded-5 mb-3 anchor">
       <div class="p-2">
-        <div class="card bg-green rounded-5 m-3">
+        <div class="card bg-green rounded-5 m-1">
           <div class="row g-0 align-items-center">
-            <div class="col-md-5 col-sm-12 align-self-center bg-blue-f">
-              <img src="img/nano9000.png" class="img-fluid w-75" alt="badminton racquet">           
+            <div class="col-md-6 col-sm-12 align-self-center bg-blue-f">
+              <img src="img/nano9000.png" class="img-fluid w-75 mx-auto d-block" alt="badminton racquet">
             </div>
             <div class="col-md-1"></div>
-            <div class="card-body col-md-6 col-sm-12">
+            <div class="card-body col-md-5 col-sm-12">
               <h1>Learn Badminton basics in just 10 minutes</h1>
               <a href="https://www.youtube.com/watch?v=MsHMCZlcrXM" class="btn btn-cRed" target="_blank">Learn more</a>
             </div>
           </div>
         </div>
       </div>
+    
       <div class="p-2">
-        <div class="card-group">
-          <div class="card bg-green border-0 m-1 rounded-3">
-            <div class="card-body">
-              <h3 class="card-title">Speed is the key in badminton</h3>
-              <p class="card-text">Some smashes have been timed at more than 250 mph, so you get less than a second to react. People who see a professional badminton match up close are always shocked at the speed.</p>
-            </div>
-            <div class="card-footer border-0">
-              <small class="text-body-secondary">Rajiv Ouseph</small>
-            </div>
-          </div>
-          <div class="card bg-green border-0 m-1 rounded-3">
-            <div class="card-body">
-              <h3 class="card-title">Daily practice is part of life</h3>
-              <p class="card-text">The gold medals from world championships and National Games prove the efficiency of my daily training.</p>
-            </div>
-            <div class="card-footer border-0">
-              <small class="text-body-secondary">Lin Dan</small>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100 bg-green border-0 m-1 rounded-3">
+              <div class="card-body">
+                <h3 class="card-title">Speed is the key in badminton</h3>
+                <p class="card-text">Some smashes have been timed at more than 250 mph, so you get less than a second to
+                  react. People who see a professional badminton match up close are always shocked at the speed.</p>
+              </div>
+              <div class="card-footer border-0">
+                <small class="text-white">Rajiv Ouseph</small>
+              </div>
             </div>
           </div>
+    
+          <div class="col">
+            <div class="card h-100 bg-green border-0 m-1 rounded-3">
+              <div class="card-body">
+                <h3 class="card-title">Daily practice is part of life</h3>
+                <p class="card-text">The gold medals from world championships and National Games prove the efficiency of my
+                  daily training.</p>
+              </div>
+              <div class="card-footer border-0">
+                <small class="text-white">Lin Dan</small>
+              </div>
+            </div>
+          </div>
+    
+    
         </div>
       </div>
     </div>
 
     <!--  //////////// TECHNIQUES ///////////-->
-    <div id="techniques" class="row anchor">
+    <div id="techniques" class="row anchor p-5">
       <div class="col text-center">
         <h1>Techniques</h1>
       </div>
     </div>
 
-    
-    <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="row row-cols-1 row-cols-md-2 g-3">
       <!--  //////////// CARD 1 ///////////-->
       <div id="c1" class="col">
         <div class="card bg-green border-0">
@@ -231,17 +240,20 @@
     </div>
 
     <!--  //////////// BADMINTON EQUIPMENT ///////////-->
-    <div id="equipment" class="row anchor">
+    <div id="equipment" class="row anchor pt-5 pb-2">
       <div class="col text-center">
         <h1>Badminton Equipment</h1>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 pb-5">
 
       <!--  //////////// EQUIPMENT 1 ///////////-->
       <div id="e1" class="col">
         <div class="card bg-green border-0 my-3">
-          <img src="img/nanoflare1000.png" class="image-fluid card-img-top mx-auto w-50" alt="badminton racquet">
+          <a href="https://www.yonex.com/badminton/racquets" class="d-flex" target="_blank">
+            <img src="img/nanoflare1000.png" class="image-fluid card-img-top mx-auto w-50" alt="badminton racquet">
+          </a>
           <div class="card-body">
             <h3 class="card-title text-center">Racquets</h3>
             <a id="ebtn1" class="d-md-none d-block btn btn-cRed float-end">
@@ -254,7 +266,9 @@
       <!--  //////////// EQUIPMENT 2 ///////////-->
       <div id="e2" class="col d-md-block d-none">
         <div class="card bg-green border-0 my-3">
-          <img src="img/yyaero30.png" class="image-fluid card-img-top mx-auto w-50" alt="Yonex Aerosensa 30 shuttlecock">
+          <a href="https://www.yonex.com/badminton/shuttlecocks" class="d-flex" target="_blank">
+            <img src="img/yyaero30.png" class="image-fluid card-img-top mx-auto w-50" alt="Yonex Aerosensa 30 shuttlecock">
+          </a>
           <div class="card-body">
             <h3 class="card-title text-center">Shuttlecocks</h3>
             <a id="ebtn2" class="d-md-none d-block btn btn-cRed float-end">
@@ -267,7 +281,9 @@
       <!--  //////////// EQUIPMENT 3 ///////////-->
       <div id="e3" class="col d-md-block d-none">
         <div class="card bg-green border-0 my-3">
-          <img src="img/ps65.png" class="image-fluid card-img-top mx-auto w-50" alt="Yonex badminton shoes">
+          <a href="https://www.yonex.com/badminton/footwear" class="d-flex" target="_blank">
+            <img src="img/ps65.png" class="image-fluid card-img-top mx-auto w-50" alt="Yonex badminton shoes">
+          </a>          
           <div class="card-body">
             <h3 class="card-title text-center">Shoes</h3>
             <a id="ebtn3" class="d-md-none d-block btn btn-cRed float-end">
@@ -280,7 +296,9 @@
       <!--  //////////// EQUIPMENT 4 ///////////-->
       <div id="e4" class="col d-md-block d-none">
         <div class="card bg-green border-0 my-3">
-          <img src="img/bag.png" class="image-fluid card-img-top mx-auto w-50" alt="Yonex badminton bag">
+          <a href="https://www.yonex.com/badminton/bags" class="d-flex" target="_blank">
+            <img src="img/bag.png" class="image-fluid card-img-top mx-auto w-50" alt="Yonex badminton bag">
+          </a>
           <div class="card-body">
             <h3 class="card-title text-center">Bags</h3>
             <a id="ebtn4" class="d-md-none d-block btn btn-cRed float-end">
