@@ -2,6 +2,7 @@
 // color:
 //      yy green    1,168,79    #01A84F
 //      yy blue     0,108,183   #006CB7
+//      light blue  198,226,246 #C6E2F6     Button hover background color
 //      ou crimson  139,62,60   #8B3E3C
 // font:
 //      Heading     Petrona     600         SemiBold
@@ -19,6 +20,7 @@ h1,h2,h3 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  color: #fff;
 }
 
 p {
@@ -26,6 +28,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: #fff;
 }
 
 button {
@@ -33,6 +36,7 @@ button {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  color: #fff;
 }
 
 /* CLASS */
@@ -42,6 +46,12 @@ button {
 
 .bg-blue {
   background-color: #006CB7;
+}
+
+.bg-blue-f {
+  background-color: rgba(0, 108, 183, 0.5);
+  border-radius: 1rem 8rem 1rem 1rem;
+  background-image: linear-gradient(to bottom left, #006CB7, gray);
 }
 
 .top {
@@ -69,8 +79,9 @@ button {
 	white-space: nowrap;
 }
 
-.r-90{
-  transform: rotate(90deg);
+.btn-cRed:hover{
+  background: #C6E2F6;
+  color: #000;
 }
 
 .anchor{
@@ -82,4 +93,41 @@ button {
   left: 25%;
   width: 25%;
   top: 210%;
+}
+
+.card-title{
+  color: #fff;
+}
+
+/* Animation */
+.birdie {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  /* animation short-hand not working
+  animation: fly 3s ease-in-out 0.5s infinite forward; */
+  animation-name: fly;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  
+  animation-fill-mode: both;
+}
+
+/* Animation */
+@keyframes fly {
+  0% {
+      transform: translate(5vw,0) rotate(0deg);
+  }
+
+  50% {
+      transform: translate(35vw,-20vh) rotate(45deg);
+  }
+
+  100% {
+      transform: translate(70vw,0) rotate(90deg);
+  }
 }
