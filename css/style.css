@@ -23,7 +23,7 @@ h1,h2,h3 {
   color: #fff;
 }
 
-p {
+p,li {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -46,6 +46,7 @@ button {
 
 .bg-blue {
   background-color: #006CB7;
+  box-shadow: 3px 3px 10px 1px #333;
 }
 
 .bg-blue-f {
@@ -85,6 +86,7 @@ button {
   background: #8B3E3C;
   border-radius: 100px;
 	white-space: nowrap;
+  box-shadow: 3px 3px 10px 1px #333;
 }
 
 .btn-cRed:hover{
@@ -101,6 +103,22 @@ button {
   left: 25%;
   width: 25%;
   top: 210%;
+}
+
+.imgExpand:hover, .textExpand:hover{
+  transform: scale(1.2);
+}
+
+.imgShadow{
+  filter: drop-shadow(3px 3px 10px #333);
+}
+
+.cardShadow{
+  box-shadow: 3px 3px 10px 1px #333;
+}
+
+.textShadow{
+  text-shadow: 2px 2px 4px #222;
 }
 
 .card-title{
