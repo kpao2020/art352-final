@@ -26,8 +26,9 @@ beCloseBtn.addEventListener("click", () => {
       if (!form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
+      } else {
+        alert('Thank you for submitting your contact information successfully.');
       }
-
       form.classList.add('was-validated')
     }, false)
   })
