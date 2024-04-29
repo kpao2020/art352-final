@@ -26,10 +26,18 @@ beCloseBtn.addEventListener("click", () => {
       if (!form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
-      } else {
+      } 
+      else {
         alert('Thank you for submitting your contact information successfully.');
       }
+
       form.classList.add('was-validated')
     }, false)
   })
 })()
+
+// popover initializer
+// const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+// const popoverList = [popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+// const exampleEl = document.getElementById('example');
+// const popover = new bootstrap.Popover(exampleEl, options);
